@@ -1,5 +1,6 @@
-# Welcome!
+import java.util.stream.*;
 
+# Welcome!
 This Java template lets you get started quickly with a simple one-page playground.
 
 ```java runnable
@@ -9,8 +10,10 @@ public class Main {
 public static void main(String[] args) {
 // }
 
-String message = "Hello World!";
-System.out.println(message);
+// Stream sum of even numbers includeing 2 up to including N
+int N=4;
+System.out.println(IntStream.rangeClosed(2,N).filter(x -> x%2==0).sum());
+// 6
 
 //{ autofold
 }
